@@ -2,14 +2,10 @@ name: "hello world workflow"
 # Controls when the action will run. Triggers the workflow on push some to master or production branch
 
 on:
-    
-    push:
-        branches:
-            -master
-            -production
-
-
-     workflow_dispatch:
+  push:
+    branches:
+         - master
+         - production
 jobs:
     hello_world:
         runs-on: ubuntu-latest
