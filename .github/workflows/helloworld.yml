@@ -8,7 +8,9 @@ on:
     pull_request:
         branches: 
             -master
-            -production       
+            -production
+            
+    workflow_dispatch:        
 
 jobs:
     hello_world:
