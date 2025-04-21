@@ -5,16 +5,12 @@ on:
         branches:
             -master
             -production
-    pull_request:
-        branches: 
-            -master
-            -production
-            
-    workflow_dispatch:        
+
+
 
 jobs:
     hello_world:
         runs-on: ubuntu-latest
         steps:
-            - name: "print hello worlds"
-              run: echo "hello worlds"
+            - name: "print hello world"
+              run: echo "hello world"
