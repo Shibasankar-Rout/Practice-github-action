@@ -44,7 +44,7 @@ jobs:
               run: echo "Running on pull request closed"
     
     
-    on-workflow-dispatch: # Job name 5
+    on-workflow-dispatch: # Job name
         if: github.event_name == 'workflow_dispatch'
         runs-on: ubuntu-latest
         steps:
