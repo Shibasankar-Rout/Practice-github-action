@@ -1,7 +1,7 @@
 name: "morepipeline / workflow" # Name of the pipeline
 
 on:
-    push: # Event: Whenever a push is made to the repository on the master branch
+
         branches:
             - master
             - test
@@ -11,12 +11,7 @@ on:
     workflow_dispatch:
 jobs:
     on-push: # Job name 1
-        runs-on: ubuntu-latest
-        steps: # Steps to be exucuted in the job
-            - name: "Running on master push" # Steps 1
-              run: echo "Running on master push"
 
-    on-pull-request: # Job name 2
         runs-on: ubuntu-latest
         steps: # Steps to be excuted in the job
             - name: "Running on pull request" # Steps 1
