@@ -1,7 +1,7 @@
 name: "morepipeline / workflow" # Name of the pipeline
 
 on:
-    push: # Event: Whenever a push is made to the repository on the master branch
+
         branches:
             - master
             - test
@@ -12,6 +12,7 @@ on:
 
 jobs:
     on-push: # Job name 1
+
         if: github.event_name == 'push'
         runs-on: ubuntu-latest
         steps: # Steps to be exucuted in the job
@@ -20,6 +21,7 @@ jobs:
 
     on-pull-request: # Job name 2
         if: github.event_name == 'pull_request'
+
         runs-on: ubuntu-latest
         steps: # Steps to be excuted in the job
             - name: "Running on pull request" # Steps 1
