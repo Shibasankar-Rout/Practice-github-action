@@ -10,14 +10,14 @@ on:
             - master
     workflow_dispatch:
 jobs:
-    on-push: # Job name
+    on-push: # Job name 1
         if: github.event_name == 'push'
         runs-on: ubuntu-latest
         steps: # Steps to be exucuted in the job
             - name: "Running on master push" # Steps 1
               run: echo "Running on master push"
 
-    on-pull-request: # Job name
+    on-pull-request: # Job name 2
         if: github.event_name == 'pull_request'
         runs-on: ubuntu-latest
         steps: # Steps to be excuted in the job
