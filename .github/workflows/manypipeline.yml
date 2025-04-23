@@ -18,7 +18,7 @@ jobs:
             - name: "Running on pull request" # Steps 1
               run: echo "Running on pull request"
               
-        on-push: # Job name 1
+    on-push: # Job name 1
         if: github.event_name == 'push'
         runs-on: ubuntu-latest
         steps: # Steps to be exucuted in the job
