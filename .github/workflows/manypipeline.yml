@@ -25,8 +25,8 @@ jobs:
             - name: "Running on pull request" # Steps 1
               run: echo "Running on pull request" 
 
-    0n-workflow-dispatch: # Job 3
-        if: github.event_name == 'workflow-request'
+    on-workflow-dispatch: # Job name 3
+        if: github.event_name == 'workflow_request'
         runs-on: ubuntu-latest
         steps:
             - name: "Running on workflow dispatch"
