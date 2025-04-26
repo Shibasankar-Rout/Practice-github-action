@@ -59,9 +59,3 @@ jobs:
         steps:
             - name: "Running on schedule" # Steps 1
               run: echo "running on schedule"
-    on-schedule-push: # Job name 7
-        if: github.event_name == 'schedule' && github.event.action == 'push'
-        runs-on: ubuntu-latest
-        steps:
-            - name: "Running on schedule push" # Steps 1
-              run: echo "running on schedule push"
